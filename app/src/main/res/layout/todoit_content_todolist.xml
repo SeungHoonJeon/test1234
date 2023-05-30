@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="17dp"
+    android:layout_marginRight="17dp"
+    android:background="@drawable/todoit_todo_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/is_complete1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="21dp" />
+
+        <Button
+            android:id="@+id/check_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/todoit_detail_button"
+            android:layout_marginBottom="21dp" />
+
+
+    </FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/priority"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:textSize="18dp"
+        android:text="상"
+        android:gravity="center"
+        android:background="@drawable/todoit_black_background"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="21dp"/>
+
+
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="할 일입니다."
+        android:textSize="18dp"
+        android:textColor="#1d1d1d"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/detail2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="130dp"
+        android:src="@drawable/dot"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
