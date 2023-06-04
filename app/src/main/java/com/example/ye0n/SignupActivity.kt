@@ -47,7 +47,7 @@ class SignupActivity : AppCompatActivity() {
              */
 
             var retrofit = Retrofit.Builder()
-                .baseUrl("http://192.168.35.178:5000")
+                .baseUrl("http://192.168.0.6:5000")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
             var SignupService: SignupService = retrofit.create(SignupService::class.java)
@@ -67,6 +67,10 @@ class SignupActivity : AppCompatActivity() {
                     Log.d("LOGIN","code : "+signup?.code)
 
                     if (signup?.code == "200") { // 회원가입 성공 시
+                        val dialog = AlertDialog.Builder(this@SignupActivity)
+                        dialog.setTitle("알림")
+                        dialog.setMessage("로그인 성공")
+                        dialog.show()
                         val intent = Intent(this@SignupActivity, MainActivity::class.java)
                         startActivity(intent)
                     } else { // 회원가입 실패 시

@@ -12,4 +12,4 @@ interface LoginService{
         @Field("id") id:String,
         @Field("password") password:String
     ) : Call<Login>
-}
+}            
